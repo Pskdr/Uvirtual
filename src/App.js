@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React,{useState} from 'react'
+
+
+import Navbar from './components/Navbar'
+import { Fragment } from 'react';
+import Formulario from './components/Formulario';
 
 function App() {
+const [login, actualizarLogin] = useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div class='divImagen'>
+        
+        {login ?(
+        <div class='row'>
+            <div class='column'></div>
+            <div class='column'>
+              
+              
+              <Formulario
+                actualizarLogin={actualizarLogin}
+              />
+            </div>
+            </div> ):<Navbar/>}
+      
+      </div>
+    </Fragment>
+    
   );
 }
 
