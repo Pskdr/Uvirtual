@@ -9,11 +9,7 @@ import Formulario from './components/Formulario';
 
 function App() {
 const [login, actualizarLogin] = useState(true)
-  //aquí se utiliza JS
-
   return (
-
-    //Aqui se utiliza HTML
     <Fragment>
       <div class='divImagen'>
         
@@ -22,12 +18,13 @@ const [login, actualizarLogin] = useState(true)
             <div class='column'></div>
             <div class='column'>
               
+              
               <Formulario
                 actualizarLogin={actualizarLogin}
               />
             </div>
             </div> ):<Navbar/>}
-          
+      
       </div>
     </Fragment>
     

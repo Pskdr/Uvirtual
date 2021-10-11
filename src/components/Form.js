@@ -2,11 +2,7 @@ import React,{Fragment} from 'react'
 
 
 const Form = () => {
-    //Aquí se utiliza JS
-    return ( 
-    //Aquí se utiliza HTML
-    <Fragment>
-        
+    return ( <Fragment>
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>

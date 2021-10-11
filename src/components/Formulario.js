@@ -5,9 +5,7 @@ import logo from '../images/iniciarSesionOutlook.jpeg'
 import Form from './Form'
 
 const Formulario = ({actualizarLogin}) => {
-    //aquí se utiliza JS
     return ( 
-        //Aquí se utiliza HTML
         <Fragment>
             
             <div class="card text-center">
