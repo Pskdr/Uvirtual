@@ -11,7 +11,8 @@
 .column {
   float: left;
   margin-top: 10rem;
-  width: 50%;
+  
+  width: device-width, initial-scale=1.0;
 }
 
 /* Clear floats after the columns */
