@@ -1,30 +1,35 @@
-import React from 'react'
+import React from 'react';
+import LogoUdem from '../images/LogoUdem.png';
+import './nav.css';
+import UvirtualAbiertaLogo from '../images/UvirtualAbiertaLogo.png';
+import ContactoCorreo from '../images/contacto-correo.png';
+import whatsapp from '../images/whatsapp.png';
 
 const Navbar = () => {
-    return ( <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    </div> );
+    return ( 
+    
+      <nav>
+        <a href="https://udemedellin.edu.co/" target="_blank" rel="noreferrer">
+          <img src={LogoUdem} alt="logo_Udem" />
+        </a>
+        <a href="https://uvirtualabierta.udem.edu.co/" target="_blank" rel="noreferrer"
+            ><img src={UvirtualAbiertaLogo} alt="logo_Uabierta"/>
+        </a>
+        <a
+          href="mailto:uvirtual@udemedellin.edu.co?subject=Información"
+          target="_blank" rel="noreferrer"
+          >
+          <img
+              src={ContactoCorreo}
+              alt="logo_contacto-correo"/>
+        </a>
+        <a
+            href="https://wa.me/573023131783?text=Requerimiento%20de%20soporte%20para%20UVirtual"
+            target="_blank" rel="noreferrer">
+            <img src={whatsapp} alt="logo_whatsapp"/>
+        </a>
+      </nav>
+    );
 }
  
 export default Navbar;

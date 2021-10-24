@@ -1,11 +1,19 @@
 
 .divImagen {
-    
-    
-  height: 700px;
-  background-image: url('/src/images/download.jpg');
+
+}
+html{
+  height: 100%
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/src/images/BackGround.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: transparent;
+  background-color: #f1faee;
 }
 
 .column {
