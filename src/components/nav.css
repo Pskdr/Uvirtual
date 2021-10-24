@@ -1,9 +1,9 @@
 nav {
     background: rgba(119, 171, 189, 0.5);
     border-radius: 100px;
-    width: fit-content;
+    width: 800px;
     list-style-type: none;
-    margin: 0px 325px;
+    margin: auto;
     padding: 15px;
 }
 img {

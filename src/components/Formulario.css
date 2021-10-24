@@ -4,6 +4,24 @@
     margin-left: 3rem;
   }
 
+  .formulario {
+    width: 50%;
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: 1px solid;
+    padding: 2rem;
+    background-color: #f1faeeb3;
+    color: #1d3557;
+    text-align: center;
+  }
+  label{
+    color: #1d3557;
+    font-weight: bold;
+  }
+  input {
+    width: 50%;
+    height: 50%;
+  }
   .card {
     margin: 50px auto;
     width: 300px;
@@ -16,4 +34,11 @@
     clear: both;
     display: block;
   }
+
+  h2 {
+    font-weight: bold; 
+    margin: 30px auto;
+
+  }
+  
   
