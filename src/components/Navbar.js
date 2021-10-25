@@ -8,7 +8,7 @@ import whatsapp from '../images/whatsapp.png';
 const Navbar = () => {
     return ( 
     
-      <nav>
+      <nav className='navar'>
         <a href="https://udemedellin.edu.co/" target="_blank" rel="noreferrer">
           <img src={LogoUdem} alt="logo_Udem" />
         </a>

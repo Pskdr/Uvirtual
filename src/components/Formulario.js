@@ -8,7 +8,9 @@ const Formulario = ({actualizarLogin}) => {
         <Fragment>
             <div className="formulario">
                 <h2>Acceso a la plataforma</h2>                
-                <Form/>    
+                <Form
+                actualizarLogin = {actualizarLogin}
+                />    
             </div>
         </Fragment>
         
