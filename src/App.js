@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import AreaPersonal from './components/AreaPersonal';
 import Formulario from './components/Formulario';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         
         
         {login ?(
-            <div>
+            <div style={{  marginBottom: '10rem'}}>
               <Header/>
               <Navbar/>
               <Formulario
@@ -28,6 +29,7 @@ function App() {
             <AreaPersonal/>
          }
       
+      <Footer/>
       </div>
     
   );
