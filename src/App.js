@@ -1,32 +1,34 @@
 
 import './App.css';
-import React,{useState} from 'react'
-
-
-import Navbar from './components/Navbar'
-import { Fragment } from 'react';
+import React,{useState} from 'react';
+import Navbar from './components/Navbar';
+import AreaPersonal from './components/AreaPersonal';
 import Formulario from './components/Formulario';
+import Header from './components/Header';
+
 
 function App() {
-const [login, actualizarLogin] = useState(true)
+  const [ login, actualizarLogin ] = useState(true)
   return (
-    <Fragment>
-      <div class='divImagen'>
+    <div>
+        
         
         {login ?(
-        <div class='row'>
-            <div class='column'></div>
-            <div class='column'>
-              
-              
+            <div>
+              <Header/>
+              <Navbar/>
               <Formulario
-                actualizarLogin={actualizarLogin}
-              />
+                    actualizarLogin={actualizarLogin}
+                    />
             </div>
-            </div> ):<Navbar/>}
+                    
+                  
+          
+         ):
+            <AreaPersonal/>
+         }
       
       </div>
-    </Fragment>
     
   );
 }
