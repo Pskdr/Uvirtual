@@ -1,11 +1,10 @@
 .imagen {
-    width: 10%;
-    height: 10%;
-    margin-left: 52rem;
+    width: 20%;
+    height: 20%;
+    margin-left: 32rem;
     padding: 15px;
 
 }
-header {
-    margin: auto;
+.header {
 }
 

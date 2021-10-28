@@ -15,12 +15,18 @@ function App() {
         
         
         {login ?(
-            <div style={{  marginBottom: '10rem'}}>
-              <Header/>
-              <Navbar/>
-              <Formulario
+
+            <div>
+              <div>
+                  
+                <Header/>
+              </div>
+              <div style={{  marginBottom: '10rem'}}>
+                <Navbar/>
+                <Formulario
                     actualizarLogin={actualizarLogin}
                     />
+            </div>
             </div>
                     
                   
