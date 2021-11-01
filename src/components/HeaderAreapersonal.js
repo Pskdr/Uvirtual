@@ -13,7 +13,7 @@ const Img = styled.img`
 const HeaderAreaPersonal = () => {
     return ( 
         <header>
-            <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-#1D3557" style={{ backgroundColor: '#1D3557'}}>
               <div className="container-fluid" style={{color:  '#f1faee'}}>
                 <a className="navbar-brand" href="/" style={{color: '#e94957', fontWeight: 'bold'}}>Uvirtual</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

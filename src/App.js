@@ -21,8 +21,8 @@ function App() {
                   
                 <Header/>
               </div>
+              <Navbar/>
               <div style={{  marginBottom: '10rem'}}>
-                <Navbar/>
                 <Formulario
                     actualizarLogin={actualizarLogin}
                     />

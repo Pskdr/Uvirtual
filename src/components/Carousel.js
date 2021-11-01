@@ -3,12 +3,14 @@ import banner1 from '../images/BANNER_ESTUDIANTES_CAMPUS_VIVO_EVALUACION_DOCENTE
 import banner2 from '../images/banner_interno_titulos_electronicos_udemedellin.jpg'
 import banner3 from '../images/BANNER_ESTUDIANTES_UdeMedellin_2021.png'
 
+
 const Carousel = () => {
 
     const stilos = {
         marginTop: '3rem',
         backgroundColor: '#f1faee'
     }
+
     return (
         
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={stilos}>
