@@ -10,14 +10,14 @@ const Div = styled.div`
     background-image: url("/src/images/white.png");
 `;
 
-const area_personal = () => {
+const AreaPersonal = ({ actualizarCurso }) => {
     return ( 
         <Div>
             <Header/>
             <Carousel/>
-            <Cards/>
+            <Cards actualizarCurso={actualizarCurso}/>
         </Div>
      );
 };
  
-export default area_personal;
+export default AreaPersonal;

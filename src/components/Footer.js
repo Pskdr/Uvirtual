@@ -50,6 +50,7 @@ const Footer = () => {
                             <div class="col-sm">
                                 Accesos directos
                             </div>
+                            
                         </div>  
                     </div>
             </section>
