@@ -10,6 +10,8 @@ import Cuestionario from '../images/curso/cuestionario.png'
 import Contenido from '../images/curso/contenido.png'
 import Pdf from '../images/curso/pdf.png'
 import Pdfcomponent from './Pdf'
+import Aviso from '../images/curso/alerta.png'
+import Pregunta from '../images/curso/incertidumbre.png'
 
 const Div = styled.div`
 border-radius: 200px;
@@ -23,7 +25,7 @@ border: solid black;
 const Unidad = {
     borderRadius: '800px',
     border: 'solid #E94957',
-    width: '10%',
+    width: '30%',
     transform: 'scale(0.60)',
     backgroundColor: '#1D3557',
     color: 'white',
@@ -102,16 +104,16 @@ const Curso = ( actualizarCurso ) => {
                 <div class="container" style={{ marginTop: '3rem'}}>
                     <div class="row">
                             <div class="col-sm" style={Unidad}>
-                                <h3>Generalidades</h3>
+                                <h3 class="title">Generalidades</h3>
                             </div>
                             <div class="col-sm" style={Unidad}>
-                                <h3>Unidad 1</h3>
+                                <h3 className='title'>Unidad 1</h3>
                             </div>
                             <div class="col-sm" style={Unidad}>
-                                <h3>Unidad 2</h3>
+                                <h3 className='title'>Unidad 2</h3>
                             </div>
                             <div class="col-sm" style={Unidad}>
-                                <h3>Unidad 3</h3>
+                                <h3 className='title'>Unidad 3</h3>
                             </div>
                             
                         </div>  
@@ -180,7 +182,20 @@ const Curso = ( actualizarCurso ) => {
                     <Pdfcomponent Pdf={Pdf} text='Solución numérica de sistemas de ecuaciones lineales' Pdfs = {Pdfs}/>
                     <Pdfcomponent Pdf={Pdf} text='Integración numércia' Pdfs = {Pdfs}/>
 
-                    <div style={{ width: '200px', height: '200px', backgroundColor: 'white'}}>
+                    <div className="container" style={{ marginTop: '3rem', backgroundColor: 'white' }}>
+                        <div className="row">
+                            <div className='col-md-2'>
+                                <div style={Circle}>                                    
+                                    <img className="img-responsive" src={Aviso} alt='' style={Img}/>
+                                </div>
+                            </div>
+                            <div className='col-md-2'>
+                                <div style={Circle}>                
+                                    <img className="img-responsive" src={Pregunta} alt='' style={Img}/>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
 

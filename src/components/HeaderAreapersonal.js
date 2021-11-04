@@ -42,7 +42,7 @@ const HeaderAreaPersonal = () => {
                     
                   </ul>
                   <a classNameName="navbar-brand" href="/">
-                    <Img classNameName="rounded-circle" src={icono} alt=""/>
+                    <Img classNameName="rounded-circle" src={icono} style={{ borderRadius: '100%' }} alt=""/>
                   </a>
                 </div>
               </div>
