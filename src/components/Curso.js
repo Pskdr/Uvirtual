@@ -8,6 +8,8 @@ import Foro from '../images/curso/foro.png'
 import Tareas from '../images/curso/lista-de-tareas.png'
 import Cuestionario from '../images/curso/cuestionario.png'
 import Contenido from '../images/curso/contenido.png'
+import Pdf from '../images/curso/pdf.png'
+import Pdfcomponent from './Pdf'
 
 const Div = styled.div`
 border-radius: 200px;
@@ -22,7 +24,7 @@ const Unidad = {
     borderRadius: '800px',
     border: 'solid #E94957',
     width: '10%',
-    transform: 'scale(0.80)',
+    transform: 'scale(0.60)',
     backgroundColor: '#1D3557',
     color: 'white',
     padding: '10px'
@@ -30,8 +32,16 @@ const Unidad = {
 const Circle = {
     borderRadius: '100%',
     backgroundColor: '#A8DADC',
-    height: '100px',
-    width: '100px', 
+    height: '70px',
+    width: '70px', 
+    border: 'solid black',
+    margin: 'auto'
+}
+const CircleFix = {
+    borderRadius: '100%',
+    backgroundColor: '#A8DADC',
+    height: '95px',
+    width: '95px', 
     border: 'solid black',
     margin: 'auto'
 }
@@ -41,6 +51,7 @@ const P = styled.p`
     margin-top: 10px;
     align-items: center;
     text-align: center;
+    font-size: 12px;
 
 `
 const Img = {
@@ -62,8 +73,17 @@ const Relative = {
      alignItems: 'left', 
      alignContent: 'left', 
      position: 'absolute',
-     bottom: '1px',
-     right: '150px'
+     bottom: '3px',
+     right: '160px'
+}
+
+const Pdfs = {
+    
+    borderRadius: '100%',
+    backgroundColor: '#457b9d',
+    height: '50px',
+    width: '50px', 
+    border: 'solid black'
 }
 
 const Curso = ( actualizarCurso ) => {
@@ -144,7 +164,7 @@ const Curso = ( actualizarCurso ) => {
                             
                             
                             <div class="col-sm"  style={Relative}>
-                                <div style={Circle}>
+                                <div style={CircleFix}>
                                     <img className="img-responsive" src={Contenido} alt="" style={Img}/>    
                                 </div>
                             </div>
@@ -153,6 +173,15 @@ const Curso = ( actualizarCurso ) => {
                             </div>
                                 
                         </div>
+                    </div>
+
+                    <Pdfcomponent Pdf={Pdf} text='Interpolación' Pdfs = {Pdfs}/>                    
+                    <Pdfcomponent Pdf={Pdf} text='Solución numérica de ecuaciones de una variable' Pdfs = {Pdfs}/>
+                    <Pdfcomponent Pdf={Pdf} text='Solución numérica de sistemas de ecuaciones lineales' Pdfs = {Pdfs}/>
+                    <Pdfcomponent Pdf={Pdf} text='Integración numércia' Pdfs = {Pdfs}/>
+
+                    <div style={{ width: '200px', height: '200px', backgroundColor: 'white'}}>
+
                     </div>
 
             </div>
