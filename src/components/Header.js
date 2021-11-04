@@ -6,7 +6,7 @@ import Uvirtual from '../images/Uvirtual.png';
 
 const Header = () => {
     return ( 
-        <header>
+        <header style={{ marginLeft: '15rem'}}>
             <a href="https://webapps.udem.edu.co/evytic/#/home"
             ><img src={Uvirtual} alt="logo_uvirtual" className="imagen"
             /></a>
