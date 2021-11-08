@@ -10,7 +10,7 @@ const Formulario = () => {
         <Fragment>
             <Header/>
             <Navbar/>
-            <div className="formulario">
+            <div className="formulario card d-lg-block" style={{ marginBottom: '15rem'}}>
                 <h2>Acceso a la plataforma</h2>                
                 <Form/>    
             </div>
