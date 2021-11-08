@@ -1,20 +1,11 @@
 import React,{Fragment} from 'react'
-import styled from '@emotion/styled';
+import { Link } from 'react-router-dom'
 
-const Btn = styled.button`
-    margin-top: 5rem;
-`;
 
-const Form = ({ actualizarLogin }) => {
-
-    const aceptarLogin = () => {
-        actualizarLogin(false);
-    }
-    
-    
+const Form = () => {    
     return ( 
         <Fragment>
-            <form onSubmit={aceptarLogin}>
+            <form>
                 <div className="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""/>
@@ -24,7 +15,7 @@ const Form = ({ actualizarLogin }) => {
                     <input type="password" className="form-control" id="exampleInputPassword1" placeholder=""/>
                 </div>
                 
-                <Btn type="submit" className="btn btn-primary btn-lg center btn-block">Enviar</Btn>
+                <Link to={'/cursos'} type="submit" className="btn btn-primary btn-lg center btn-block" style={{ marginTop: '5rem'}}>Enviar</Link>
             </form>
         </Fragment> 
     );

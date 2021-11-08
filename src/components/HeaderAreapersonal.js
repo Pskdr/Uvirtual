@@ -2,6 +2,7 @@ import React from 'react'
 import icono from '../images/98cbb0c011fcc827ae27947c3b95cb35.jpg'
 import styled from '@emotion/styled';
 import './areapersonal.css'
+import { Link } from 'react-router-dom'
 
 const Img = styled.img`
     width: auto;
@@ -32,11 +33,11 @@ const HeaderAreaPersonal = () => {
                         Mis cursos
                       </a>
                       <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="/curso#">Curso 1</a></li>
-                        <li><a className="dropdown-item" href="/curso#">Curso 2</a></li>
-                        <li><a className="dropdown-item" href="/curso#">Curso 3</a></li>
+                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Curso 1</a></Link></li>
+                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Curso 2</a></Link></li>
+                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Curso 3</a></Link></li>
                         <li><hr className="dropdown-divider"/></li>
-                        <li><a className="dropdown-item" href="/home">Salir</a></li>
+                        <li> <Link to={'/login'}><a className="dropdown-item" href="/login">Salir</a></Link></li>
                       </ul>
                     </li>
                     

@@ -2,15 +2,17 @@ import React from 'react'
 import { Fragment } from 'react';
 import './Formulario.css'
 import Form from './Form'
+import Header from './Header'
+import Navbar from './Navbar'
 
-const Formulario = ({actualizarLogin}) => {
+const Formulario = () => {
     return ( 
         <Fragment>
+            <Header/>
+            <Navbar/>
             <div className="formulario">
                 <h2>Acceso a la plataforma</h2>                
-                <Form
-                actualizarLogin = {actualizarLogin}
-                />    
+                <Form/>    
             </div>
         </Fragment>
         

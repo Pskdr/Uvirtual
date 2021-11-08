@@ -7,3 +7,16 @@
 [0m2021.11.04 10:57:21 WARN  Build server is not auto-connectable.[0m
 [0m2021.11.04 10:57:21 WARN  no build tool detected in workspace 'D:\crecimiento\proyecto1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.11.04 16:58:33 INFO  shutting down Metals[0m
+[0m2021.11.05 13:16:47 INFO  Started: Metals version 0.10.9 in workspace 'D:\crecimiento\proyecto1' for client Visual Studio Code 1.62.0.[0m
+[0m2021.11.05 13:16:49 INFO  time: initialize in 1.32s[0m
+[0m2021.11.05 13:16:51 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.05 13:16:51 WARN  no build tool detected in workspace 'D:\crecimiento\proyecto1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.11.05 16:12:21 INFO  shutting down Metals[0m
+[0m2021.11.06 15:01:04 INFO  Started: Metals version 0.10.9 in workspace 'D:\crecimiento\proyecto1' for client Visual Studio Code 1.62.0.[0m
+[0m2021.11.06 15:01:05 INFO  time: initialize in 1.13s[0m
+[0m2021.11.06 15:01:09 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.06 15:01:09 WARN  no build tool detected in workspace 'D:\crecimiento\proyecto1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.11.07 17:48:15 INFO  Started: Metals version 0.10.9 in workspace 'D:\crecimiento\proyecto1' for client Visual Studio Code 1.62.0.[0m
+[0m2021.11.07 17:48:16 INFO  time: initialize in 1.53s[0m
+[0m2021.11.07 17:48:29 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.07 17:48:29 WARN  no build tool detected in workspace 'D:\crecimiento\proyecto1'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
