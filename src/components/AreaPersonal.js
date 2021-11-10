@@ -6,14 +6,14 @@ import './areapersonal.css'
 import styled from '@emotion/styled';
 
 const Div = styled.div`
-    background-color: #fff;
+    background-color: #F1FAEE;
     background-image: url("/src/images/white.png");
 `;
 
 const AreaPersonal = () => {
     return ( 
         <Div>
-            <Header/>
+            <Header/><br/>
             <Carousel/>
             <Cards/>
         </Div>

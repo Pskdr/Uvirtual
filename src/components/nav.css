@@ -1,12 +1,12 @@
 .navar {
-    background: rgba(119, 171, 189, 0.5);
+    background: #1D355780;
     border-radius: 100px;
     width: 800px;
     list-style-type: none;
     margin: auto;
     padding: 15px;
 }
-img {
+.n{
     width: 25%;
     height: 25%;
 }

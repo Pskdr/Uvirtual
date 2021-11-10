@@ -13,6 +13,7 @@ import Pdfcomponent from './Pdf'
 import Aviso from '../images/curso/alerta.png'
 import Pregunta from '../images/curso/incertidumbre.png'
 import Parcero from '../images/curso/parcero.png'
+import fondotitulo from '../images/FondoCurso.bmp'
 
 const Div = styled.div`
 border-radius: 200px;
@@ -20,7 +21,7 @@ width: 600px;
 height: fit-content;
 background-color: #E94957;
 margin: 0 auto;
-color: white;
+color: #F1FAEE;
 border: solid black;
 padding: 10px;
 `;
@@ -30,7 +31,7 @@ const Unidad = {
     width: '30%',
     transform: 'scale(0.60)',
     backgroundColor: '#1D3557',
-    color: 'white',
+    color: '#F1FAEE',
     padding: '10px'
 }
 const Circle = {
@@ -70,7 +71,7 @@ const Content = {
     height: '100px',
     transform: 'scale(0.80)',
     backgroundColor: '#1D3557',
-    color: 'white',
+    color: '#F1FAEE',
     padding: '15px'
 }
 const Relative = {
@@ -82,7 +83,7 @@ const Relative = {
 }
 
 const Pdfs = {
-    
+
     borderRadius: '100%',
     backgroundColor: '#457b9d',
     height: '50px',
@@ -106,33 +107,31 @@ const Text = {
 }
 
 const Curso = ( actualizarCurso ) => {
-    return ( 
+    return (
         <div>
-            
             <Header/>
-            <div style={{ marginTop: '3rem', backgroundColor: 'white', height: '100px', width: '100%', margin: 'auto'}}>
+            <div style={{ marginTop: '3rem', backgroundColor: '#F1FAEE', height: '100px', width: '100%', margin: 'auto'}}>
             </div>
-            <div style={{ marginTop: '3rem', backgroundColor: 'white', height: 'auto', width: 'auto', margin: 'auto', textAlign: 'center'}}>
-            
+            <div style={{ marginTop: '3rem', backgroundColor: '#F1FAEE', height: 'auto', width: 'auto', margin: 'auto', textAlign: 'center'}}>
+
                 <Div>
-                    <div className="container">
+                    <div className="container ">
                         <div className="row">
                             <div className="col-md-4">
                                 <h2 style={Text}>Métodos numéricos</h2>
                             </div>
                             <div className="col-md-6" style={{ textAlign: 'right', margin: 'auto' }}>
-                                <h2 style={Text}> Profesor: 
-                                <p style={{ color: 'grey', textAlign: 'center', fontSize: '15px'}}> Chuck Norris </p> </h2>
+                                <h2 style={Text}> Profesor:
+                                <p style={{ color: 'white', textAlign: 'center', fontSize: '15px'}}> Chuck Norris </p> </h2>
                             </div>
                             <div className="col-md-2">
                                 <img className="img-responsive" src={Parcero} alt="" style={Profesor}/>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
                 </Div>
-                <div class="container" style={{ marginTop: '3rem'}}>
+                <div class="container" style={{ marginTop: '1rem'}}>
                     <div class="row">
                             <div class="col-sm" style={Unidad}>
                                 <h3 class="title">Generalidades</h3>
@@ -213,7 +212,7 @@ const Curso = ( actualizarCurso ) => {
                     <Pdfcomponent Pdf={Pdf} text='Solución numérica de sistemas de ecuaciones lineales' Pdfs = {Pdfs}/>
                     <Pdfcomponent Pdf={Pdf} text='Integración numércia' Pdfs = {Pdfs}/>
 
-                    <div className="container" style={{ marginTop: '3rem', backgroundColor: 'white', color: '' }}>
+                    <div className="container" style={{ marginTop: '3rem', backgroundColor: '#F1FAEE', color: '' }}>
                         <div className="row">
                             <div className='col-md-2'>
                                 <div style={Circle}>                                    

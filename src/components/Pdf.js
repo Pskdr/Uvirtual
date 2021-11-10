@@ -3,7 +3,7 @@ import './Pdfs.css'
 
 const Pdfs = ( {Pdf, Pdfs, text} ) => {
     return ( 
-        <div className="div" style={{ marginBottom: '15px', backgroundColor: 'white'}}>
+        <div className="div" style={{ marginBottom: '15px', backgroundColor: '#F1FAEE'}}>
             <div className="row">
                 <div className="col-md-2">
                         <img className="img-responsive" src={Pdf} alt="" style={Pdfs} />
