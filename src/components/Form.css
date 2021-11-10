@@ -1,6 +1,45 @@
-.h5::after{
+.h6::after{
     content: '▼';
+    font-weight: bold;
 }
-.h5:hover{
+.h6:hover{
     cursor: pointer;
+    font-weight: bold;
 }
+
+.office{
+    font-weight: bold;
+    margin: 5px auto;
+    padding: 10px;
+    background: #457B9D90;
+    border-radius: 30px;
+    align-items: center;
+
+}
+a{
+    color: #F1FAEE;
+    font-weight: bold;
+    margin: 15px auto;
+}
+h6{
+    font-weight: bold;
+    margin: 10px auto;
+    color: #F1FAEE;
+    content: '▼';
+  }
+
+.input-group {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+
+.input-group input {
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    width: 85%;
+  }

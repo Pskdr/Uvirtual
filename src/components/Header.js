@@ -11,7 +11,8 @@ const Header = () => {
             ><img src={Uvirtual} alt="logo_uvirtual" className="imagen"
             /></a>
         </header>
+        
      );
 }
- 
+
 export default Header;

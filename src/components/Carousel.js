@@ -5,14 +5,12 @@ import banner3 from '../images/BANNER_ESTUDIANTES_UdeMedellin_2021.png'
 
 
 const Carousel = () => {
-
     const stilos = {
         marginTop: '3rem',
-        backgroundColor: '#f1faee'
+        backgroundColor: '#F1FAEE'
     }
 
     return (
-        
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={stilos}>
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -37,5 +35,5 @@ const Carousel = () => {
 
      );
 }
- 
+
 export default Carousel;

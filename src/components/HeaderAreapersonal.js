@@ -1,5 +1,5 @@
 import React from 'react'
-import icono from '../images/98cbb0c011fcc827ae27947c3b95cb35.jpg'
+import icono from '../images/User.bmp'
 import styled from '@emotion/styled';
 import './areapersonal.css'
 import { Link } from 'react-router-dom'
@@ -40,11 +40,10 @@ const HeaderAreaPersonal = () => {
                         <li> <Link to={'/login'}><a className="dropdown-item" href="/login">Salir</a></Link></li>
                       </ul>
                     </li>
-                    
                   </ul>
                   <a classNameName="navbar-brand" href="/">
-                    <Img classNameName="rounded-circle" src={icono} style={{ borderRadius: '100%' }} alt=""/>
-                  </a>
+                    <Img classNameName="rounded-circle" src={icono} style={{ borderRadius: '100%' ,width :"15%"}} alt=""/>&nbsp;
+                  ALejandro Durango</a>
                 </div>
               </div>
             </nav>
