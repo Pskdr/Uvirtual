@@ -1,4 +1,6 @@
 
+import React, { useState } from 'react'
+
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Redirect }  from 'react-router-dom'
 import AreaPersonal from './components/AreaPersonal';
@@ -8,6 +10,14 @@ import Curso from './components/Curso';
 
 
 function App() {
+  const [ usuario, actualizarUsuario] = useState({
+    id: '',
+    nombre: '',
+    correo: '',
+    contraseña: ''
+  })
+  
+
   return (
     <Router>
       <Redirect to='/login'/>

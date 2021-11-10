@@ -13,7 +13,6 @@ import Pdfcomponent from './Pdf'
 import Aviso from '../images/curso/alerta.png'
 import Pregunta from '../images/curso/incertidumbre.png'
 import Parcero from '../images/curso/parcero.png'
-import fondotitulo from '../images/FondoCurso.bmp'
 
 const Div = styled.div`
 border-radius: 200px;
