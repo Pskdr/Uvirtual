@@ -27,8 +27,8 @@ const Cards = () => {
                 
               <Link to={'/curso'}> <img className="bd-placeholder-img rounded-circle img" style={imgStyle} alt='' src={curso1}/><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></Link>
           
-                <h2 style={H2}>Analisis númerico</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur</p><Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
+                <h2 style={H2}>Ecuasiones diferenciales</h2>
+                <p>Lorem ipsum Analisis númericodolor sit amet, consectetur</p><Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
                 
               </div>
               <div className='column col-lg-4' style={{textAlign: 'center'}}>
