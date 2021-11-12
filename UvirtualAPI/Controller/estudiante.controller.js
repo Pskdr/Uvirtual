@@ -37,7 +37,6 @@ const obtenerEstudiantes_NOMBRE = (req, res) => {
         connection.query(sql, (error, results) => {
             if(error) throw error;
             if(results.length > 0){
-
                 res.json({
                     "respuesta" : true
                 });

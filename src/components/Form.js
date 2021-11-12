@@ -1,16 +1,25 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './Form.css'
+import axios from 'axios'
+
+
 
 
 const Form = () => {
+    let paginaDestino = "/"
     const [usuario, guardarUsuario] = useState({
-        email: '',
-        password: ''
+        correo: '',
+        contrasena: ''
     })
     const [visibilidad, actualizarVisibilidad] = useState(false)
 
-    const { email, password } = usuario;
+    const [usuarioFinal, actualizarUsuarioFinal] = useState({
+        correo: '',
+        contrasena: ''
+    })
+
+    const { correo, contrasena } = usuario;
 
     const onChange = e => {
         guardarUsuario({
@@ -24,12 +33,33 @@ const Form = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        if(email === '' || password === ''){
+        if(correo === '' || contrasena === ''){
+            actualizarUsuarioFinal(usuario);
             console.log('Correcto')
         }else{
             console.log('No funciona')
         }
     }
+    useEffect(() => {
+        const llamarAPI = async () =>{
+           //evitamos la primera ejecucion
+     
+           //consultar la api
+            
+           const url = `http://localhost:3001/estudiantes/obtenerEstudiante`;
+     
+           const resultado = await axios.get(url);
+
+           if(resultado.resultado === "true"){
+                paginaDestino = '/cursos';
+           } else {
+                paginaDestino = '/login';
+           }
+           return paginaDestino;
+        }
+        llamarAPI();
+     
+       }, [usuarioFinal])
 
     return (
         <Fragment>
@@ -48,15 +78,15 @@ const Form = () => {
                         <input type="hidden" name="logintoken" value="kB4Fo7qvjC38lECULSoZSmToaPvaob1R" />
                         <div className="input-group" >
                             <img src="https://cdn-icons-png.flaticon.com/512/64/64572.png" alt="" width="30" height="30" />
-                            &nbsp;&nbsp;<input type="email"  id="email" name="email" value={email} onChange={onChange} placeholder="Nombre de usuario" />
+                            &nbsp;&nbsp;<input type="correo"  id="correo" name="correo" value={correo} onChange={onChange} placeholder="Nombre de usuario" />
                         </div>
                         <div className="input-group" >
                             <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="" width="30" height="30" />
-                            &nbsp;&nbsp;<input type="password" id="password" name="password" placeholder="Contraseña" value={password} onChange={onChange}   />
+                            &nbsp;&nbsp;<input type="contrasena" id="contrasena" name="contrasena" placeholder="Contraseña" value={contrasena} onChange={onChange}   />
                         </div>
 
                         <div >
-                            <Link to={'/cursos'} type="submit" className="btn btn-primary">Acceder</Link>
+                            <Link id='acceso'  to={paginaDestino} type="submit" className="btn btn-primary">Acceder</Link>
                         </div>
                         <p className="my-2"><a href="https://uvirtual.udem.edu.co/login/forgot_password.php">¿Olvidó su nombre de usuario o contraseña?</a></p>
                     </form>) : null}
