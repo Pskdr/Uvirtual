@@ -52,8 +52,10 @@ const Form = () => {
 
            if(resultado.resultado === "true"){
                 paginaDestino = '/cursos';
+                document.getElementById('acceso').onClick()
            } else {
                 paginaDestino = '/login';
+                document.getElementById('acceso').onClick()
            }
            return paginaDestino;
         }
@@ -86,7 +88,8 @@ const Form = () => {
                         </div>
 
                         <div >
-                            <Link id='acceso'  to={paginaDestino} type="submit" className="btn btn-primary">Acceder</Link>
+                            <button type="submit" className="btn btn-primary">Acceder</button>
+                            <Link id='acceso'  to={paginaDestino}></Link>
                         </div>
                         <p className="my-2"><a href="https://uvirtual.udem.edu.co/login/forgot_password.php">¿Olvidó su nombre de usuario o contraseña?</a></p>
                     </form>) : null}
