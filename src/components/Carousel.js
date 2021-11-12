@@ -6,7 +6,7 @@ import banner3 from '../images/BANNER_ESTUDIANTES_UdeMedellin_2021.png'
 
 const Carousel = () => {
     const stilos = {
-        marginTop: '3rem',
+        marginTop: '4.5rem',
         backgroundColor: '#F1FAEE'
     }
 

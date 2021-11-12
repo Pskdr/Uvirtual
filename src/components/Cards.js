@@ -14,49 +14,50 @@ const Cards = () => {
     const divStyle = {
         textAlign: 'center'
     }
-    const H2 = {
+    const H3 = {
       color: 'black',
-      textAlign: 'center'
+      textAlign: 'center',
+
     }
-    
-    
-    return ( 
+    return (
         <div className="container" style={{alignItems: 'center', display: 'flex', marginTop: '2rem', backgroundColor: 'rgba(255, 255, 255, 0.5)', color: 'black'}}>
             <div className="row">
               <div className='column col-lg-4' style={divStyle}>
-                
+
               <Link to={'/curso'}> <img className="bd-placeholder-img rounded-circle img" style={imgStyle} alt='' src={curso1}/><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></Link>
-          
-                <h2 style={H2}>Ecuasiones diferenciales</h2>
-                <p>Lorem ipsum Analisis númericodolor sit amet, consectetur</p><Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
-                
+
+                <h2 style={H3}>Lenguajes-Paradigmas</h2>
+                <p>El lenguaje de programación debe ser universal.</p><Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
+
               </div>
               <div className='column col-lg-4' style={{textAlign: 'center'}}>
-                
+
               <Link to={'/curso'}><img className="bd-placeholder-img rounded-circle img" alt='' style={imgStyle} href="/" src={curso2} /><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></Link>
-                <h2 style={H2}>Métodos numéricos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur </p> <Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
-                
+                <h2 style={H3}>Minería de Datos </h2>
+                <p>La minería de datos es el proceso de hallar anomalías, patrones y correlaciones en grandes conjuntos de datos para predecir resultados. </p> <Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
+
               </div>
               <div className='column col-lg-4' style={divStyle}>
-                
+
               <Link to={'/curso'}><img className="bd-placeholder-img rounded-circle img" style={imgStyle} alt='' href="/" src={curso3} /><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></Link>
-                <h2 style={H2}>Libre elección</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur </p>  <Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
-                
+                <h2 style={H3}>Electrónica Digital</h2>
+                <p>Es la rama de la electrónica más moderna y que evoluciona más rápidamente </p>  <Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
+
               </div>
 
               <div className='column col-lg-4' style={divStyle}>
-              <Link to={'/curso'}><img className="bd-placeholder-img rounded-circle img" style={imgStyle} href="/" alt='' src={curso4} /><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></Link>
-                  <h2 style={H2}>Actividad deportiva</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur </p>  <Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
-                
               </div>
-                
+              <div className='column col-lg-4' style={divStyle}>
+              <Link to={'/curso'}><img className="bd-placeholder-img rounded-circle img" style={imgStyle} href="/" alt='' src={curso4} /><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></Link>
+                  <h2 style={H3}>Análisis numérico</h2>
+                <p>Es la rama de las matemáticas encargada de diseñar algoritmos para simular aproximaciones de solución a problemas en análisis matemático.</p>  <Link to={'/curso'} className="btn btn-secondary" href="/">ir »</Link>
+
+              </div>
+
             </div>
         </div>
 
      );
 }
- 
+
 export default Cards;

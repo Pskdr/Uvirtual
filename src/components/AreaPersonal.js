@@ -11,7 +11,7 @@ const Div = styled.div`
 `;
 
 const AreaPersonal = () => {
-    return ( 
+    return (
         <Div>
             <Header/><br/>
             <Carousel/>
@@ -19,5 +19,5 @@ const AreaPersonal = () => {
         </Div>
      );
 };
- 
+
 export default AreaPersonal;

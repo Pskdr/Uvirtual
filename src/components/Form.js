@@ -37,9 +37,10 @@ const Form = () => {
                 <div >
                     <div className="office" >
                     <h5 className="mt-2">Identifíquese usando su cuenta en:</h5>
-                        <a href="/" title="Cuenta Office365"  >
+                        <div style={{backgroundColor: '#1D355780',borderRadius: '40px',width:'60%', margin:'auto'}}>
                             <img src="https://www.microsoft.com/favicon.ico" alt="" width="30" height="30" />
-                            Cuenta Office365  </a>
+                            <Link to={'/cursos'} type="submit" className="btn"  > <h6>Cuenta Office365</h6></Link>
+                        </div>
                     </div>
                 </div>
                 <div className="office">
@@ -56,7 +57,7 @@ const Form = () => {
                         </div>
 
                         <div >
-                            <Link to={'/cursos'} type="submit" className="btn btn-primary">Acceder</Link>
+                            <Link to={'/cursos'} type="submit" className="btn btn-primary"><h6>Acceder</h6></Link>
                         </div>
                         <p className="my-2"><a href="https://uvirtual.udem.edu.co/login/forgot_password.php">¿Olvidó su nombre de usuario o contraseña?</a></p>
                     </form>) : null}

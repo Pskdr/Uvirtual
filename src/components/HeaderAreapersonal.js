@@ -33,9 +33,9 @@ const HeaderAreaPersonal = () => {
                         Mis cursos
                       </a>
                       <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Curso 1</a></Link></li>
-                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Curso 2</a></Link></li>
-                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Curso 3</a></Link></li>
+                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Ecuaciones Diferenciales</a></Link></li>
+                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Metodos Numericos</a></Link></li>
+                        <li><Link to={'/curso'}><a className="dropdown-item" href="/curso">Libre Elección</a></Link></li>
                         <li><hr className="dropdown-divider"/></li>
                         <li> <Link to={'/login'}><a className="dropdown-item" href="/login">Salir</a></Link></li>
                       </ul>
@@ -43,7 +43,7 @@ const HeaderAreaPersonal = () => {
                   </ul>
                   <a className="navbar-brand" href="/">
                     <Img className="rounded-circle" src={icono} style={{ borderRadius: '100%' ,width :"15%"}} alt=""/>&nbsp;
-                  ALejandro Durango</a>
+                  Alejandro Durango</a>
                 </div>
               </div>
             </nav>
